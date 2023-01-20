@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', views.GetUser.as_view()),
     path('oneUser/<int:pk>', views.GetOneUser.as_view()),
-    path('rusultApp/<int:pk>', views.GetResult.as_view())
+    path('rusultApp/<int:pk>', views.GetResult.as_view()),
+    path('orderUser/', views.GetPerson.as_view())
 ]
